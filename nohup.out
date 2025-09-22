@@ -1,0 +1,17 @@
+
+> learning-endpoints@1.0.0 dev
+> ts-node-dev --respawn --transpile-only src/app.ts
+
+[INFO] 16:19:40 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.2)
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/Users/paddymac/personal-repos/learning-endpoints/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/paddymac/personal-repos/learning-endpoints/src/app.ts:56:5)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._compile (/Users/paddymac/personal-repos/learning-endpoints/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/44/prsk2jvj62l4vwpfmdtjk64c0000gn/T/ts-node-dev-hook-9939821977710723.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/44/prsk2jvj62l4vwpfmdtjk64c0000gn/T/ts-node-dev-hook-9939821977710723.js:114:20)
+[ERROR] 16:19:40 Error: listen EADDRINUSE: address already in use :::3000
