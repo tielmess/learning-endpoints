@@ -4,6 +4,7 @@ import { weatherRoutes } from './routes/weather';
 import { quotesRoutes } from './routes/quotes';
 import { usersRoutes } from './routes/users';
 import { cryptoRoutes } from './routes/crypto';
+import { dragonballRoutes } from './routes/dragonball';
 
 const app = express();
 const PORT = process.env.PORT || 9999;
@@ -16,7 +17,8 @@ const apiDocumentation = {
     weather: '/api/weather/:city',
     quotes: '/api/quotes',
     users: '/api/users/:id',
-    crypto: '/api/crypto/:symbol'
+    crypto: '/api/crypto/:symbol',
+    dragonball: '/api/dragonball/id'
   }
 };
 
@@ -39,6 +41,7 @@ app.use('/api/weather', weatherRoutes);
 app.use('/api/quotes', quotesRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/crypto', cryptoRoutes);
+app.use('/api/dragonball', dragonballRoutes);
 
 // Error handling middleware
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {

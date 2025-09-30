@@ -3,9 +3,7 @@ import { WeatherData, ApiResponse } from '../types';
 
 export class WeatherService {
   private readonly baseUrl = 'http://api.weatherapi.com/v1';
-  // Get API key from environment variables. 
-    // This api doesn't actually need an API key. But we've many APIs do. 
-    // This code is purely an example of how this works. 
+  // Get API key from environment variables.  
   private readonly apiKey = process.env.WEATHER_API_KEY || ''; 
 
   async getWeatherByCity(city: string): Promise<ApiResponse<WeatherData>> {

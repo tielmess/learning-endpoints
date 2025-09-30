@@ -62,6 +62,14 @@ export interface CryptoPrice {
   last_updated: string;
 }
 
+// Dragonball API types
+export interface Dragonball {
+  id: number;
+  name: string;
+  powerLevel: number;
+  transformations: string[];
+}
+
 // Generic API response type
 export interface ApiResponse<T> {
   success: boolean;
