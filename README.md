@@ -270,7 +270,7 @@ Response:
 }
 ```
 
-### 5. Dragonball API 💰
+### 5. Dragonball API 🐉
 
 **Get single character by id:**
 
