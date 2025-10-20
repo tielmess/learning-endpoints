@@ -151,20 +151,20 @@ After starting the container, test the API:
 ### Check Health
 
 ```bash
-curl http://localhost:3000/
+curl http://localhost:9999/
 ```
 
 ### Test Specific Endpoints
 
 ```bash
 # API documentation
-curl http://localhost:3000/
+curl http://localhost:9999/
 
 # Weather endpoint (example)
-curl http://localhost:3000/api/weather/london
+curl http://localhost:9999/api/weather/london
 
 # Quotes endpoint (example)
-curl http://localhost:3000/api/quotes
+curl http://localhost:9999/api/quotes
 ```
 
 ## Docker Commands Reference
@@ -275,7 +275,7 @@ docker build -t learning-endpoints:latest .
 docker run -d -p 3000:9999 --name api-server learning-endpoints:latest
 
 # 3. Test the API
-curl http://localhost:3000/
+curl http://localhost:9999/
 
 # 4. View logs
 docker logs api-server
@@ -310,11 +310,11 @@ Complete these assignments to gain hands-on experience with Docker and prepare f
    docker run -p 3000:9999 --name my-api learning-endpoints
    ```
 3. **Test all endpoints** to ensure they work:
-   - Visit `http://localhost:3000/` for API documentation
-   - Test weather endpoint: `curl http://localhost:3000/api/weather/london`
-   - Test quotes endpoint: `curl http://localhost:3000/api/quotes`
-   - Test users endpoint: `curl http://localhost:3000/api/users/1`
-   - Test crypto endpoint: `curl http://localhost:3000/api/crypto/bitcoin`
+   - Visit `http://localhost:9999/` for API documentation
+   - Test weather endpoint: `curl http://localhost:9999/api/weather/london`
+   - Test quotes endpoint: `curl http://localhost:9999/api/quotes`
+   - Test users endpoint: `curl http://localhost:9999/api/users/1`
+   - Test crypto endpoint: `curl http://localhost:9999/api/crypto/bitcoin`
 
 **Success Criteria**: All endpoints return valid responses and the container runs without errors.
 
